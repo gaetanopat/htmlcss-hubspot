@@ -1,0 +1,388 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+}
+/* assegno al body un font fisso, un colore fisso del testo e un colore fisso dello sfondo */
+body{
+  font-family: sans-serif;
+  color:#33475b;
+  background-color: #eaedf2;
+}
+/* dimensioni prime 3 righe */
+header, nav, .strategy_2019{
+  width: 100%;
+  height: 70px;
+}
+/* per i bottoni in generale */
+button{
+  padding:10px;
+  font-size:14px;
+  border:none;
+  border-radius: 5px;
+  background-color: white;
+  color: #33475b;
+}
+/* per i bottoni arancioni */
+.orange_button{
+  color:white;
+  background-color: #ff7a59;
+}
+/* quando passo sul bottone arancione */
+.orange_button:hover{
+  background-color: rgba(255, 122, 89, 0.8);
+}
+/* per i link in generale */
+a{
+  padding-left:10px;
+  text-decoration: none;
+  color:#33475b;
+}
+/* per tutti gli elementi li  */
+ul li {
+  display:inline-block;
+  font-size:16px;
+}
+/* per alcuni pezzi che hanno lo sfondo bianco e non come il body */
+.white{
+  background-color: white;
+}
+/* per il container generale */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+/* per l'header */
+header{
+  background-color: #e1e5ed;
+  position:fixed;
+  z-index:1;
+  left:0;
+  top:0;
+}
+/* per la parte di sinistra e destra */
+header .header_left, header .header_right {
+  height:100%;
+  width:50%;
+}
+/* per English e Contact Us */
+header .header_left{
+  float:left;
+}
+/* per search, Log In e GetHub Free e allinearli a destra */
+header .header_right {
+  float: right;
+  text-align: right;
+}
+/* per centrare English e Contact Us */
+header .header_left ul {
+  padding-left: 0;       /* padding nullo per non lasciare spazio dall'icona mondo */
+  margin-left: 0;        /* margine nullo */
+  font-size:0;
+  margin-top:27px;   /*perchè avendo un'altezza di (70 - 16(altezza font di default))/2 */
+}
+header .header_left .border_right{
+  border-right:1px solid #33475b;
+  padding-right:30px;
+}
+header .header_left .padding_left{
+  padding-left:30px;
+}
+/* per gli ul del float di destra */
+header .header_right ul{
+  font-size:0;
+  margin-top: 17px;    /* (70-16(del font)-20 (di padding 10+10))/2 */
+  margin-right:0;
+}
+/* per l'icona della lente */
+header .header_right i{
+  color:#0099ff;
+}
+/* per il bottone Log In */
+header .header_right .white_button{
+  background-color: white;
+  color:#ff7a59;
+  border:1px solid #ff7a59;
+  margin-left:10px;
+  margin-right:10px;
+}
+/* quando passo sul bottone Log In */
+header .header_right .white_button:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+header::after{
+  clear:both;
+  display:table;
+  content:'';
+}
+
+/* per la seconda riga, che comprende l'immagine HubSpot e Software, Pricing ecc.. */
+nav{
+  background-color: white;
+  margin-top:70px;
+}
+/*per l'immagine HubSpot */
+nav .nav_left{
+  height:100%;
+  width:30%;
+}
+/* per Software, Pricing ecc.. */
+nav .nav_right {
+  height:100%;
+  width:70%;
+}
+/* per centrare l'immagine */
+nav .nav_left{
+  margin-top:20px;    /* (70-30(che è l'altezza dell'immagine))/2 */
+  float:left;
+}
+/* per mettere al centro Software, Pricing, ecc.. e allinearli a destra */
+nav .nav_right{
+  margin-top:27px;   /* (70-16)/2 */
+  float:right;
+  text-align: right;
+}
+/* per dare a Software, Pricing ecc.. un grassetto e un colore */
+nav .nav_right ul li a{
+  font-weight: bold;
+  color:#33475b;
+}
+nav:after{
+  clear:both;
+  display:table;
+  content:'';
+}
+
+
+/* per New! 2019 Video Strategies for Sales & Marketing e il bottone  */
+.strategy_2019{
+  background-color: #2d3e50;
+  color:white;
+}
+.strategy_2019 .center{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+/* per il bottone Access Now  */
+.strategy_2019 button{
+  margin-left:10px;
+}
+/* quando passo sul bottone */
+.strategy_2019 button:hover{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+/* per la sezione There's a better way to grow */
+.way_to_grow{
+  width:100%;
+  height:600px;
+  background-image: linear-gradient(to top right, #0099ff, #80ccff); /* verso destra in alto*/
+  color:white;
+  border-bottom:3px solid #33475b;
+}
+/* per la parte di sinistra */
+.way_to_grow .section_left{
+  width:50%;
+  float:left;
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+/* per il titolo */
+.way_to_grow .section_left h1{
+  margin-top:20px;
+  margin-bottom:20px;
+  font-size:64px;
+}
+/* per il bottone Get HubSpot Free */
+.way_to_grow .section_left button{
+  padding:20px;
+  margin-top:20px;
+  margin-bottom:20px;
+  font-size:20px;
+}
+/* quando passo sul bottone */
+.way_to_grow button:hover{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* per il piccolo paragrafo sotto il bottone */
+.way_to_grow .small_p{
+  font-size:12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* per l'immagine in basso a destra */
+.way_to_grow .section_right img{
+  width:300px;
+  height:100px;
+  float:right;
+  margin-top:500px;
+}
+.way_to_grow:after{
+  clear:both;
+  display:table;
+  content:'';
+}
+
+
+/* per la sezione powerful che comprende l'immagine, il titolo e il paragrafo */
+.powerful{
+  width:100%;
+  height:300px;
+  text-align: center;
+  margin-top:70px;
+}
+/* per l'immagine */
+.powerful img{
+  width:260px;
+  height:194.75px;
+}
+/* per il titolo */
+.powerful h2{
+  font-size:32px;
+}
+/* per il paragrafo */
+.powerful p{
+  margin:10px 100px;
+}
+
+
+/* per la sezione Free HubSpot CRM */
+.hubspot_crm{
+  width:100%;
+  height: 300px;
+  margin-top:30px;
+}
+/* per lo shadow e il transition */
+.hubspot_crm .container:hover{
+  width:81%;
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 10px 10px 11px #ccd6e8; /* spostamento orizzontale, verticale, sfocatura, colore */
+}
+/* per la parte sinistra contenente l'immagine e il bottone */
+.hubspot_crm .section_left{
+  width:40%;
+  float:left;
+  text-align: center;
+}
+/* per l'immagine */
+.hubspot_crm .section_left img{
+  width:206px;
+  height:150px;
+  margin-top:50px;
+  margin-left:50%;
+}
+/* per il bottone */
+.hubspot_crm .section_left .orange_button{
+  display: block;
+  margin-left:65%;
+  margin-top:20px;
+}
+/* per la parte destra contenente due titoli, un paragrafo e lelenco */
+.hubspot_crm .section_right{
+  width:60%;
+  float:right;
+  padding:50px;
+}
+/* per il titolo grande */
+.section_right h3{
+  margin-bottom:10px;
+}
+/* per i POPULAR FEATURES */
+.section_right .features{
+  margin-top:20px;
+  font-weight: bold;
+}
+/* per l'elenco */
+.section_right ul{
+  padding-left: 0;       /* padding nullo per non lasciare spazio dall'icona mondo */
+  margin-left: 0;        /* margine nullo */
+  font-size:0;
+  margin-top:27px;
+}
+/* per gli elementi */
+.section_right ul li{
+  margin-right:20px;
+}
+/* per l'icona */
+.section_right ul li i{
+  color:#ff7a59;
+  margin-right:10px;
+}
+.hubspot_crm:after{
+  clear:both;
+  display:table;
+  content:'';
+}
+
+
+/* per la sezione delle 3 colonne */
+.cols{
+  margin-top:30px;
+  margin-bottom:100px;
+}
+/* per le 3 colonne */
+.cols .col1, .cols .col2, .cols .col3{
+  float:left;
+  width:30%;
+  text-align: center;
+}
+/* quando passo sulle colonne */
+.cols .col1:hover,.col2:hover,.col3:hover{
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 10px 10px 11px #ccd6e8; /* spostamento orizzontale, verticale, sfocatura, colore */
+}
+/* per le immagini */
+.cols img{
+  margin-top:20px;
+  width:234px;
+  height:150px;
+}
+/* per la colonna 2, i margini a destra e sinistra */
+.cols .col2{
+  margin-right:5%;
+  margin-left:5%;
+}
+/* per il titolo di ciascuna colonna */
+.cols h4{
+  margin-top:15px;
+}
+/* per il paragrafo di ciascuna colonna */
+.cols p{
+  margin:15px 35px;
+  text-align: justify;
+}
+/* per la scritta POPULAR FEATURES */
+.cols .features{
+  margin:15px auto;
+  font-weight:bold;
+}
+/* per l'icona */
+.cols ul li i{
+  color:#ff7a59;
+  margin-right:10px;
+  margin-top:10px;
+}
+/* per la linea */
+.cols hr{
+  margin:0 35px;
+}
+/* per l'elenco */
+.cols ul li{
+  text-align: justify;
+  display:block;
+}
+/* per il bottone arancione */
+.cols .orange_button{
+  margin:15px 0;
+}
+.cols:after{
+  clear:both;
+  display:table;
+  content:'';
+}
