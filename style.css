@@ -21,6 +21,7 @@ button{
   border-radius: 5px;
   background-color: white;
   color: #33475b;
+  cursor:pointer;
 }
 /* per i bottoni arancioni */
 .orange_button{
@@ -36,6 +37,11 @@ a{
   padding-left:10px;
   text-decoration: none;
   color:#33475b;
+  cursor:pointer;
+}
+/* per il cursore quando vado sulle immagini HubSpot della seconda riga e del footer */
+.pointer{
+  cursor:pointer;
 }
 /* per tutti gli elementi li  */
 ul li {
@@ -45,6 +51,10 @@ ul li {
 /* per alcuni pezzi che hanno lo sfondo bianco e non come il body */
 .white{
   background-color: white;
+}
+/* per i paragrafi piccoli */
+.small_p{
+  font-size:12px;
 }
 /* per il container generale */
 .container {
@@ -98,6 +108,7 @@ header .header_right ul{
 /* per l'icona della lente */
 header .header_right i{
   color:#0099ff;
+  cursor:pointer;
 }
 /* per il bottone Log In */
 header .header_right .white_button{
@@ -211,7 +222,6 @@ nav:after{
 }
 /* per il piccolo paragrafo sotto il bottone */
 .way_to_grow .small_p{
-  font-size:12px;
   color: rgba(255, 255, 255, 0.8);
 }
 /* per l'immagine in basso a destra */
@@ -299,7 +309,7 @@ nav:after{
 }
 /* per l'elenco */
 .section_right ul{
-  padding-left: 0;       /* padding nullo per non lasciare spazio dall'icona mondo */
+  padding-left: 0;       /* padding nullo per non lasciare spazio */
   margin-left: 0;        /* margine nullo */
   font-size:0;
   margin-top:27px;
@@ -385,4 +395,261 @@ nav:after{
   clear:both;
   display:table;
   content:'';
+}
+
+
+/* per la sezione community che comprende i numeri */
+.community{
+  height:750px;
+  background-image: linear-gradient(to top right, #0099ff, #80ccff); /* verso destra in alto*/
+  color:white;
+  text-align: center;
+}
+/* per i vari padding */
+.community h2, .community .style{
+  padding:150px 200px 10px 200px;
+}
+/* per il titolo */
+.community h2{
+  font-size:30px;
+}
+/* per il paragrafo */
+.community .style{
+  padding-top:10px;
+  margin-bottom:40px;
+}
+/* per le 2 righe */
+.community_info, .community_info2{
+  width:25%;
+  height:auto;
+  float:left;
+  padding:30px;
+  border-bottom:1px solid white;
+}
+/* per la seconda riga */
+.community_info2{
+  border-bottom:none;
+}
+/* per i bordi di destra */
+.border{
+  border-right:1px solid white;
+}
+/* per i numeri grandi */
+.community h3{
+  font-size:30px;
+  margin:10px 0px;
+}
+.community:after{
+  content:'';
+  clear:both;
+  display:table;
+}
+
+
+/* per la sezione customers, che mostra quanti clienti usano HubSpot */
+.customers{
+  margin-top:70px;
+  margin-bottom:250px;
+}
+/* la parte di sinistra */
+.customers_left{
+  width:30%;
+  padding-left:50px;
+  float:left;
+}
+/* per 56,500 */
+.customers .customers_left h2{
+  font-size:30px;
+  margin-bottom:10px;
+}
+/* per il paragrafo */
+.customers .customers_left p{
+  line-height: 35px;
+}
+/* la parte di destra */
+.customers_right{
+  width:70%;
+  float:right;
+  padding-left:100px;
+}
+/* per l'immagine */
+.customers_right img{
+  margin:0px 30px 10px 30px;
+}
+.customers::after{
+  content:'';
+  clear:both;
+  display:table;
+}
+
+
+/* sezione growing Start Growing With HubSpot Today */
+.growing{
+  height:600px;
+}
+/* parte sinistra */
+.growing_left{
+  width:40%;
+  float:left;
+}
+/* per il titolo */
+.growing .growing_left h2{
+  font-size:30px;
+  margin-bottom:10px;
+}
+/* per il paragrafo */
+.growing .growing_left p{
+  line-height: 35px;
+}
+/* parte destra */
+.growing_right{
+  width:60%;
+  float:right;
+  text-align: right;
+}
+/* per l'immagine */
+.growing_right img{
+  width:370px;
+  height:400px;
+  border-radius:50%;
+  background-color: #f2547d;
+}
+/* per il bottone */
+.growing_left .orange_button{
+  padding:20px;
+  margin-top:20px;
+  margin-bottom:20px;
+  font-size:20px;
+}
+.growing:after{
+  content:'';
+  clear:both;
+  display:table;
+}
+
+
+/* per il footer, il link e l'icona */
+footer, footer a, footer i{
+  color:#cbd6e2;
+}
+/* per il footer */
+footer{
+  margin-top:30px;
+  background-color: #33475b;
+  height:700px;
+}
+/* per le colonne */
+footer .footer_col1,
+footer .footer_col2,
+footer .footer_col3,
+footer .footer_col4{
+  width:25%;
+  color:white;
+  float:left;
+}
+/* per il bottone */
+footer .footer_col4 button:hover{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.footer_cols:after{
+  content:'';
+  clear:both;
+  display:table;
+}
+/* per i titoli */
+footer h4{
+  margin-top:50px;
+}
+/* per l'elenco */
+footer ul{
+  padding-left: 0;       /* padding nullo per non lasciare spazio */
+  margin-left: 0;        /* margine nullo */
+}
+/* per gli elementi */
+footer ul .block{
+  display:block;
+  margin:30px 0;
+}
+/* per i link */
+footer a{
+  padding-left:0;
+}
+/* quando passo sopra col mouse */
+footer a:hover, footer i:hover{
+  color:#7fd1de;
+}
+/* per le icone */
+footer i{
+  margin-top:20px;
+  padding:10px;
+  cursor:pointer;
+}
+/* per togliere lo spazio a sinistra dell'icona Facebook */
+.fa-facebook{
+  padding-left:0;
+}
+/* per la parte delle lingue */
+footer .footer_languages{
+  text-align: center;
+  margin-top:50px;
+  border-bottom:1px solid #cbd6e2;
+}
+/* per l'elenco delle lingue */
+footer .footer_languages ul li{
+  padding:20px;
+  margin-bottom:20px;
+}
+footer:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+/* per la parte finale */
+footer .footer_bottom{
+  margin-top:40px;
+}
+/* parte sinistra e destra */
+footer .footer_bottom .footer_bottom_left,
+footer .footer_bottom .footer_bottom_right{
+  width:50%;
+}
+/* sinistra */
+footer .footer_bottom .footer_bottom_left{
+  float:left;
+}
+footer .footer_bottom .footer_bottom_left .pointer{
+  margin-bottom:10px;
+}
+/* destra */
+footer .footer_bottom .footer_bottom_right{
+  float:right;
+  text-align: right;
+}
+footer .footer_bottom .footer_bottom_right ul li{
+  padding-left:20px;
+}
+footer .footer_bottom:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+
+
+/* per la chat */
+.chat{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:1;
+}
+/* per il bottone */
+.chat button{
+  background-color:#33475b;
+  border-radius:50%;
+  box-shadow:0px 0px 80px 3px grey;
+}
+/* per l'icona */
+.chat i{
+  color:white;
+  cursor:pointer;
 }
